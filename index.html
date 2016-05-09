@@ -38,18 +38,18 @@
       function drawVisualization() {
         var wrapper = new google.visualization.ChartWrapper({
           chartType: 'ColumnChart',
-          dataTable: [['', 'Germany', 'USA', 'Brazil', 'Canada', 'France', 'RU'],
-                      ['', 700, 300, 400, 500, 600, 800]],
-          options: {'title': 'Countries'},
+          dataTable: [['', 'Learn French', 'Read more books', 'Improve fitness', 'Reduce spending', 'Save energy', 'Reduce waste'],
+                      ['', 26, 5, 15, 40, 60, 25]],
+          options: {'title': 'Goals'},
           containerId: 'vis_div'
         });
         wrapper.draw();
 
         var wrapper2 = new google.visualization.ChartWrapper({
           chartType: 'ColumnChart',
-          dataTable: [['', 'Germany', 'USA', 'Brazil', 'Canada', 'France', 'RU'],
-                      ['', 700, 300, 400, 500, 600, 800]],
-          options: {'title': 'Countries'},
+          dataTable: [['', 'Use Duo Lingo', 'Read for 30 minutes', 'Go to gym', 'Take lunch to work', 'Turn off the heater', 'Choose less packaged foods'],
+                      ['', 7, 3, 3, 4, 6, 8]],
+          options: {'title': 'Activities per week'},
           containerId: 'vis_div2'
         });
         wrapper2.draw();

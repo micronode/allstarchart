@@ -9,7 +9,7 @@
     <meta name="author" content="Micronode">
     <link rel="icon" href="favicon.png">
 
-    <title>Allstar Chart | Online rewards system</title>
+    <title>About - Allstar Chart | Online rewards system</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,41 +29,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {packages: ['corechart']});   // Don't need to specify chart libraries!
-      google.charts.setOnLoadCallback(drawVisualization);
-
-      function drawVisualization() {
-        var wrapper = new google.visualization.ChartWrapper({
-          chartType: 'ColumnChart',
-          dataTable: [['', 'Learn French', 'Read more books', 'Improve fitness', 'Reduce spending', 'Save energy', 'Reduce waste'],
-                      ['', 26, 5, 15, 40, 60, 25]],
-          options: {'title': 'Goals'},
-          containerId: 'vis_div'
-        });
-        wrapper.draw();
-
-        var wrapper2 = new google.visualization.ChartWrapper({
-          chartType: 'ColumnChart',
-          dataTable: [['', 'Use Duo Lingo', 'Read for 30 minutes', 'Go to gym', 'Take lunch to work', 'Turn off the heater', 'Choose less packaged foods'],
-                      ['', 7, 3, 3, 4, 6, 8]],
-          options: {'title': 'Activities per week'},
-          containerId: 'vis_div2'
-        });
-        wrapper2.draw();
-
-        var wrapper3 = new google.visualization.ChartWrapper({
-          chartType: 'ColumnChart',
-          dataTable: [['', 'Take a holiday', 'Watch TV', 'Go out for dinner', 'Buy a new watch', 'Free time', 'Print 20 photos'],
-                      ['', 7, 3, 4, 5, 6, 8]],
-          options: {'title': 'Activities remaining per reward'},
-          containerId: 'vis_div3'
-        });
-        wrapper3.draw();
-      }
-    </script>
   </head>
 
   <body>
@@ -93,35 +58,30 @@
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Allstar Chart</h1>
-        <p>On this site you can track your progress in achieving your goals. Parents and teachers can create reward charts used to track positive behaviour in their children. Most importantly though, this site provides a fun way to congratulate yourself on your achievements, no matter how small.</p>
-        <p><a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-8">
           <h2>Goals</h2>
           <div id="vis_div" style="width: 300px; height: 250px;"></div>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="about.html#goals" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-md-4">
+      </div>
+      <div class="row">
+        <div class="col-md-8">
           <h2>Activities</h2>
           <div id="vis_div2" style="width: 300px; height: 250px;"></div>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="about.html#activities" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
-        <div class="col-md-4">
+      </div>
+      <div class="row">
+        <div class="col-md-8">
           <h2>Rewards</h2>
           <div id="vis_div3" style="width: 300px; height: 250px;"></div>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="about.html#rewards" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
 
